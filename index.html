@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .circle-glow {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 120px 40px rgba(255, 0, 0, 0.35);
+}
+
+    .cta {
+  display: inline-block;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  will-change: transform;
+  -webkit-transform: translateZ(0); /* optional for GPU */
+}
+
+.cta:hover,
+.cta:focus {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 14px 40px rgba(239,68,68,0.15);
+}
+
+ .wave {
+  display: inline-block;
+  animation: waveAnim 1.8s infinite ease-in-out;
+  transform-origin: 70% 70%;
+}
+
+@keyframes waveAnim {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+  </style>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- NAVBAR -->
+  <nav class="p-5 flex justify-between items-center bg-white shadow-sm fixed w-full top-0 left-0 z-50">
+    <h1 class="text-xl font-bold text-red-600">Rudi Dev</h1>
+    <ul class="flex space-x-6 font-medium">
+      <li><a href="#home" class="hover:text-red-500">Home</a></li>
+      <li><a href="#about" class="hover:text-red-500">About</a></li>
+      <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- HOME -->
+  <section id="home" class="min-h-screen flex items-center pt-32 pb-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- TEXT -->
+    <div>
+        <h3 class="font-bold text-lg">Hallo, semuaa,<span class="wave">👋</span> saya</h3>
+        <h2 class="text-6xl font-bold mb-2 leading-tight text-red-600 animate-pulse block tracking-wider">Rudi Yansah</h2>
+        <h4 class="text-xl mb-6 font-semibold">
+            <span class="font-medium">Student & </span> Web Developer
+        </h4>
+
+        <p class="text-lg mb-6 leading-relaxed text-gray-700">
+            Saya seorang Web Developer yang membantu bisnis dan personal brand
+            memiliki website modern, cepat, dan terlihat profesional.
+        </p>
+
+        <a href="#projects"
+            class="cta bg-red-600">
+            Lihat Portofolio Saya
+        </a>
+
+    </div>
+
+    <!-- PHOTO -->
+    <div class="flex justify-center relative mt-10 md:mt-0">
+
+      <!-- Glow Red Light -->
+      <div
+        class="absolute w-72 h-72 rounded-full bg-white opacity-100 shadow-[0_0_60px_rgba(239,68,68,0.9)] animate-bounce circle-glow animate-spin">
+      </div>
+
+      <!-- Foto -->
+      <img
+        src="rudi.png"
+        alt="Foto Rudi Yansah"
+        class="w-64 h-64 object-contain rounded-2xl drop-shadow-xl relative"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- ABOUT -->
+    <section id="about" class="py-24 px-6 w-full mx-auto bg-gray-900">
+    <div class="text-center mb-10 w-full">
+<h3 class="text-red-600 font-semibold tracking-wide uppercase">Tentang Saya</h3>
+<h2 class="text-3xl md:text-4xl font-bold mt-2 text-white">Siapa Saya dan Apa yang Saya Kerjakan?</h2>
+<p class="text-lg text-white leading-relaxed max-w-4xl mx-auto mt-4">
+Saya adalah Web Developer yang berfokus membuat website cepat, modern, dan berfungsi maksimal
+untuk bisnis maupun personal brand. Berpengalaman membuat landing page, toko online, dan sistem custom
+dengan UI/UX yang bersih serta performa yang optimal.
+</p>
+</div>
+
+
+<!-- SKILLS -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 mt-12 w-full">
+
+  <!-- HTML -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 128 128">
+      <path fill="#E44D26" d="M19 0l9 101 36 11 36-11 9-101H19z"/>
+      <path fill="#F16529" d="M64 116l29-8 8-92H64v100z"/>
+      <path fill="#EBEBEB" d="M64 66H45l-1-11h20V45H34l3 33h27z"/>
+      <path fill="#fff" d="M64 66v11h19l-2 22-17 5v12l36-11 4-50H64z"/>
+    </svg>
+    HTML
+  </div>
+
+  <!-- CSS -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 128 128">
+      <path fill="#1572B6" d="M19 0l9 101 36 11 36-11 9-101H19z"/>
+      <path fill="#33A9DC" d="M64 116l29-8 8-92H64v100z"/>
+      <path fill="#fff" d="M64 66H45l-1-11h20V45H34l3 33h27z"/>
+    </svg>
+    CSS
+  </div>
+
+  <!-- JavaScript -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 128 128">
+      <path fill="#F7DF1E" d="M2 2h124v124H2z"/>
+      <path d="M74 85c0 10-7 17-18 17-9 0-15-4-18-10l10-6c2 4 4 6 8 6 4 0 7-2 7-7V48h11v37z" />
+    </svg>
+    JavaScript
+  </div>
+
+  <!-- React -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 128 128">
+      <circle cx="64" cy="64" r="11" fill="#61DAFB"/>
+      <g fill="none" stroke="#61DAFB" stroke-width="6">
+        <ellipse rx="56" ry="22" transform="rotate(60 64 64)"/>
+        <ellipse rx="56" ry="22" transform="rotate(120 64 64)"/>
+        <ellipse rx="56" ry="22" transform="rotate(180 64 64)"/>
+      </g>
+    </svg>
+    React.js
+  </div>
+
+  <!-- Tailwind -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 128 128">
+      <path fill="#38BDF8"
+        d="M64 24c-14 0-23 7-27 20 5-4 11-6 17-6 8 0 14 4 18 11 6-12 15-18 27-18 14 0 23 7 27 20-5-4-11-6-17-6-8 0-14 4-18 11-6 12-15 18-27 18-14 0-23-7-27-20 5 4 11 6 17 6 8 0 14-4 18-11 6-12 15-18 27-18z"/>
+    </svg>
+    Tailwind CSS
+  </div>
+
+  <!-- Node.js -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 256 288">
+      <path fill="#83CD29" d="M128 0L0 74v140l128 74 128-74V74z"/>
+    </svg>
+    Node.js
+  </div>
+
+  <!-- Express -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 300 300">
+      <text x="0" y="180" font-size="150" font-family="Arial" fill="black">Ex</text>
+    </svg>
+    Express.js
+  </div>
+
+  <!-- REST API -->
+  <div class="p-4 bg-gray-50 shadow-md rounded-xl text-center font-semibold flex flex-col items-center gap-2 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]
+">
+    <svg width="40" viewBox="0 0 24 24" stroke="black" fill="none" stroke-width="2">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M3 12h6m6 0h6M12 3v6m0 6v6"/>
+    </svg>
+    REST API
+  </div>
+
+</div>
+
+
+</section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6 bg-gray-100">
+<h3 class="text-3xl font-bold text-center mb-10">Project Terbaru</h3>
+
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<!-- Card 1 -->
+<div class="bg-white shadow-lg rounded-2xl p-4 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+<img src="https://images.unsplash.com/photo-1559027615-ce3a9f5f4f8b?w=600" class="h-40 w-full object-cover rounded-lg mb-4" />
+<h4 class="text-xl font-semibold mb-2">Landing Page Startup</h4>
+<p class="text-sm mb-3 text-gray-600">UI modern, cepat, clean, dan fokus pada konversi bisnis.</p>
+<a href="#" class="text-red-600 font-semibold hover:underline">Detail →</a>
+</div>
+
+
+<!-- Card 2 -->
+<div class="bg-white shadow-lg rounded-2xl p-4 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+<img src="Transaksi-Penjualan.png" class="h-40 w-full object-cover rounded-lg mb-4" />
+<h4 class="text-xl font-semibold mb-2">Web Kelola Barang UMKM</h4>
+<p class="text-sm mb-3 text-gray-600">Input Barang, Pemasok, stok, dan Transaksi.</p>
+<a href="#" class="text-red-600 font-semibold hover:underline">Detail →</a>
+</div>
+
+
+<!-- Card 3 -->
+<div class="bg-white shadow-lg rounded-2xl p-4 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" class="h-40 w-full object-cover rounded-lg mb-4" />
+<h4 class="text-xl font-semibold mb-2">Personal Branding</h4>
+<p class="text-sm mb-3 text-gray-600">Website portofolio profesional untuk membangun kredibilitas pribadi.</p>
+<a href="#" class="text-red-600 font-semibold hover:underline">Detail →</a>
+</div>
+</div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+<h3 class="text-3xl font-bold mb-6">Kontak Saya</h3>
+<p class="mb-6">Siap membuat website untuk bisnis kamu. Isi form di bawah dan pesan akan otomatis terkirim ke WhatsApp saya.</p>
+
+
+<!-- FORM -->
+<form onsubmit="sendToWa(event)" class="grid gap-4 text-left max-w-xl mx-auto">
+<input type="text" id="nama" placeholder="Nama Anda" class="p-3 border rounded-lg w-full" required>
+<input type="email" id="email" placeholder="Email Anda" class="p-3 border rounded-lg w-full" required>
+<textarea id="pesan" placeholder="Pesan Anda" class="p-3 border rounded-lg w-full h-28" required></textarea>
+<button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition">
+Kirim ke WhatsApp
+</button>
+</form>
+
+
+<script>
+function sendToWa(e) {
+e.preventDefault();
+const nama = document.getElementById('nama').value;
+const email = document.getElementById('email').value;
+const pesan = document.getElementById('pesan').value;
+
+
+const text = `Halo, saya ${nama}%0AEmail: ${email}%0A%0APesan:%0A${pesan}`;
+const waNumber = '6281234567890'; // ganti dengan nomor WA kamu
+
+
+window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
+}
+</script>
+</section>
+
+
+<footer class="text-center py-6 text-sm text-gray-600">
+© 2025 Rudi Dev. All rights reserved.
+</footer>
+</body>
+</html>
